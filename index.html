@@ -362,7 +362,7 @@
         </div>
     </div>
     </footer>
-    <div class="backdrop " data-modal>
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="modal-close" data-modal-close>
                 <svg class="modal-close-icon" width="8" height="8">
@@ -374,7 +374,7 @@
                 <div class="modal-field">
                 <label for="user-name" class="input-label">Name</label>
                     <div class="input-wrap">
-                    <input type="text" name="user-name" class="modal-input" placeholder="Петро" required minlength="2" maxlength="10" />
+                    <input type="text" name="user-name" id="user-name" class="modal-input" placeholder="Петро" required minlength="2" maxlength="10" />
                     <svg class="icon-name current" width="12" height="12">
                     <use href="./images/icons.svg#icon-person"></use>
                     </svg>
@@ -383,9 +383,9 @@
                 <div class="modal-field">
                 <label for="user-phone" class="input-label">Phone</label>
                     <div class="input-wrap">
-                <input type="tel" name="user-phone" class="modal-input" placeholder="+380 (96) 777-77-77"
+                <input type="tel" name="user-phone" id="user-phone"class="modal-input" placeholder="+380 (96) 777-77-77"
                     pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" title="+380 (96) 777-77-77" required />
-                    <svg class="icon-name current" width="13" height="13">
+                    <svg class="icon-name" width="13" height="13">
                     <use href="./images/icons.svg#icon-phone"></use>
                     </svg>
                     </div>
@@ -393,13 +393,28 @@
                 <div class="modal-field">
                 <label for="user-email" class="input-label">Email</label>
                 <div class="input-wrap">
-                <input type="email" name="user-email" class="modal-input" placeholder="petro@gmail.com" />
-                    <svg class="icon-name current" width="15" height="12">
+                <input type="email" name="user-email" id="user-email" class="modal-input" placeholder="petro@gmail.com" />
+                    <svg class="icon-name" width="15" height="12">
                     <use href="./images/icons.svg#icon-email"></use>
                     </svg>
                     </div>
                 </div>
-                <button type="submit">Send</button>
+                <div class="modal-field">
+                    <label for="user-text" class="input-label">Comment</label>
+                    <textarea name="user-text" id="user-text" class="modal-comment" placeholder="Text input"></textarea>
+                </div>
+                <div class="modal-field">
+                <input type="checkbox" id="user-privacy" name="user-privacy" value="true" class="modal-check visually-hidden"/>
+                <label for="user-privacy" class="check-text">
+                    <span>
+                        <svg class="check-name" width="10" height="8">
+                            <use href="./images/icons.svg#icon-checkvector"></use>
+                        </svg>
+                    </span>
+                    I accept the terms and conditions of the<a href="" class="checkbox-link link" target="_blank" rel="noopener noreferrer">Privacy Policy</a></label>
+                
+            </div>
+                <button type="submit" class="btn-modal">Send</button>
             </form>
         </div>
     </div>
