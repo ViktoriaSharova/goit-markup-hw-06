@@ -1001,7 +1001,7 @@ transform: translate(-50% -50%) scale(0);
  }
 
 
- .modal-check:checked + .check-text span {
+ .modal-check:checked + .check-text > .check-privecy {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
