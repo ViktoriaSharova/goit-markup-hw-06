@@ -903,6 +903,7 @@ transform: translate(-50% -50%) scale(0);
 
  .input-wrap {
     position: relative;
+    margin-bottom: 16px;
  }
 
  .modal-input::placeholder {
