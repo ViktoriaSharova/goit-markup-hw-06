@@ -494,6 +494,7 @@ img {
 
 .section-footer {
     display: flex;
+    align-items: baseline;
     letter-spacing: 0.02em;
     color: var(--secondary-light-color);
     background-color: var(--title-color);
@@ -539,7 +540,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #F4F4FD;
-    max-width: 264px;
+    width: 264px;
 
 }
 
