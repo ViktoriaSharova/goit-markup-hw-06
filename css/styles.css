@@ -1075,7 +1075,7 @@ transform: translate(-50% -50%) scale(0);
     align-items: center;
  }
 
- .modal-check:focus {
+ .modal-comment:focus {
     border-color: #4D5AE5;
  }
 
