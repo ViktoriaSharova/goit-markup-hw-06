@@ -1075,16 +1075,15 @@ transform: translate(-50% -50%) scale(0);
     align-items: center;
  }
 
- .modal-comment:focus + .input-label{
+ .modal-comment:focus + .modal-check {
     border-color: #4D5AE5;
  }
 
 
- .modal-check:checked + .check-text > .check-privecy {
+ .modal-check:checked + .check-text span {
     background-color: #404BBF;
     border: none;
     fill: #F4F4FD;
-    border-color: #4D5AE5;
  }
 
  .modal-check {
