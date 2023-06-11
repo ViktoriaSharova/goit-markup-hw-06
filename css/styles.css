@@ -791,7 +791,7 @@ img {
     align-items: baseline;
 }
 .subscribe-form {
-
+    display: flex;
     gap: 24px;
     
 }
